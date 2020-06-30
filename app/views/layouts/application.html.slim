@@ -1,16 +1,18 @@
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 doctype html
 html
   head
     title
-      | Taskleaf
+      | 自分管理はしっかりと
     = csrf_meta_tags
     = csp_meta_tag
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-  .app-title.navbar.navbar-expand-md.navbar-light.bg-light
-    .navbar-brand Task
-  .container
-    -if flash.notice.present?
-    .alert.alert-success= flash.notice
-    = yield
+    .app-title.navbar.navbar-expand-md.navbar-light.bg-light
+      .navbar-brand1 自分管理
+
+    .container
+      -if flash.notice.present?
+        .alert.alert-success= flash.notice
+      = yield
