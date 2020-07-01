@@ -25,3 +25,40 @@
   color: rgb(255, 255, 255);
   margin:0 10px;
 }
+
+.btn-outline-warning2{
+  color: gray; 
+  background-color:rgb(250, 246, 110);
+  margin-bottom:5px;
+  margin-left:10px;
+}
+
+.btn-outline-warning3{
+  color:gray;
+  background-color:rgb(247, 131, 60);
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.btn-outline-primary3{
+  color:white;
+  background-color:rgb(240, 99, 99);
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.btn-outline-primary4{
+  color:gray;
+  background-color:white;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.table th ,.table td{
+  border-top:none;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background: #f8edf9;
+}
+.table thead th{
+  border-bottom: solid 6px rgb(156, 247, 233);
+}

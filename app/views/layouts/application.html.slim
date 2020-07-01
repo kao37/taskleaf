@@ -12,14 +12,14 @@ html
     .app-title.navbar.navbar-expand-md.navbar-light.bg-light 
       .navbar-brand1.mx-auto 自分管理APP✏
     
-      ul.navbar-nav.ml-auto
+      ul.navbar-nav.mx-auto
         - if current_user
-          li.nav-ite= link_to 'タスク一覧', tasks_path, class: 'nav-link2'
+          li.nav-ite= link_to 'タスク一覧', tasks_path, class: 'btn btn-outline-warning2'
           - if current_user.admin?
-            li.nav-item= link_to 'ユーザー一覧', admin_users_path, class: 'nav-link2'
-          li.nav-item= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link2'
+            li.nav-item= link_to 'ユーザー一覧', admin_users_path, class: 'btn btn-outline-primary4'
+          li.nav-item= link_to 'ログアウト', logout_path, method: :delete, class: 'btn btn-outline-warning3'
         - else
-          li.nav-item1= link_to 'ログイン', login_path, class: 'nav-link2' 
+          li.nav-item1= link_to 'ログイン', login_path, class: 'btn btn-outline-primary3' 
     .container
       -if flash.notice.present?
         .alert.alert-success= flash.notice
