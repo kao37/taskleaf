@@ -7,10 +7,12 @@ class Admin::UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def 
-
   def new
     @user = User.new
+  end
+
+  def edit
+    @user = User.find(params[:id])
   end
 
   def create
@@ -37,7 +39,8 @@ end
     @user = User.find(params[:id])
     @user.destroy
     redirect_to admin_user_path, notice: "ユーザー「#{@user.name}」を削除しました。"
-    
+  end
+  
 private 
   def user_params
     params.require(:user).permit(:name, :email, :admin, :password, :password_confirmation)
