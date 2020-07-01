@@ -28,7 +28,7 @@ class TasksController < ApplicationController
       redirect_to  @task, notice: "タスク「#{@task.name}」を登録しました"
     else 
       render :new
-    end
+  end
 end
 
   def destroy
@@ -39,7 +39,7 @@ end
 
 private 
 
-def task_params
-  params.require(:task).permit(:name, :description)
+  def task_params
+    params.require(:task).permit(:name, :description)
   end
 end
