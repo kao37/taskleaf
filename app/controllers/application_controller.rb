@@ -12,7 +12,4 @@ class ApplicationController < ActionController::Base
     redirect_to login_path unless current_user
   end
 
-  def set_locale
-    I18n.locale = current_user&.locale || :ja
-  end
 end
