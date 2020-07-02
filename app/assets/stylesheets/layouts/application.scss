@@ -47,7 +47,6 @@ body{
   color:#e83e8c;
 }
 
-
 .btn-outline-warning3{
   color:gray;
   background-color:rgb(109, 247, 245);
@@ -71,7 +70,6 @@ body{
   background-color:white;
   color:#007bff;
 }
-
 
 .btn-outline-primary3{
   color:white;
@@ -121,10 +119,8 @@ body{
   background-color: white;
 }
 
-
 .table th ,.table td{
   border-top:none;
-  // padding: 0.5em 1em;
   margin: 1em 0;
   background: #faf4fad0;
 }
@@ -167,4 +163,8 @@ body{
   background-color:rgba(255, 255, 255, 0.721);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.pull-right{
+  float:right;
 }
