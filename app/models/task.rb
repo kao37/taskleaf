@@ -1,4 +1,5 @@
 class Task < ApplicationRecord
+  paginates_per 8
   has_one_attached :image
 
   validates :name, presence: true, length: { maximum: 30 }
@@ -37,10 +38,7 @@ class Task < ApplicationRecord
     []
   end
 
-
-
   private
-
   def validate_name_not_including_comma
     errors.add(:name, 'にカンマを含めることはできません') if name&.include?(',')
   end

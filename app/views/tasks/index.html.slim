@@ -12,10 +12,12 @@ h1 Task List
       = f.search_field :created_at_gteq, class: 'form-control'
   .form-group2
     = f.submit class: 'btn btn-danger4'
-
 =link_to '新規登録', new_task_path, class:'btn btn-outline-primary2'
 
 .md-3
+  = paginate @tasks
+  = page_entries_info @tasks
+
 table.table.table-hover
   thead.thead-default
     tr
@@ -33,6 +35,6 @@ table.table.table-hover
 
 = link_to 'エクスポート', tasks_path(format: :csv), class: 'btn btn-danger3 mb-5'
 
-= form_tag import_tasks_path, multipart: true, class: 'mb-5' do
+= form_tag import_tasks_path, multipart: true, class: 'nav justify-content-end mb-5' do
   = file_field_tag :file
-  = submit_tag "インポート", class: 'btn btn-primary'
+  = submit_tag "インポート", class: 'btn btn-primary1'

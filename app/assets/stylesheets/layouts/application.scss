@@ -2,7 +2,8 @@ body{
   background-color:#F2D5E3;
   background-image:url('/assets/images/5.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
+  display: block;
 }
 
 .app-title.navbar.navbar-expand-md.navbar-light.bg-light{
@@ -25,7 +26,6 @@ body{
   background-color:white;
   border-radius: 25px;
   color:red;
-  // color:rgb(105, 212, 250);
   border:0px none;
 }
 
@@ -60,6 +60,18 @@ body{
   background-color:white;
   color:#e83e8c;
 }
+
+.btn-primary1{
+  background-color: #007bff;
+  color:white;
+}
+.btn-primary1:hover{
+  border:solid 1px;
+  border-color:#007bff;
+  background-color:white;
+  color:#007bff;
+}
+
 
 .btn-outline-primary3{
   color:white;
@@ -140,7 +152,6 @@ body{
   border:0px none;
 }
 .form-group3 {
-  // background-color:rgba(135, 207, 235, 0.851);
   background-color:rgba(255, 255, 255, 0.749);
   padding:3px;
   border-radius: 10px;
