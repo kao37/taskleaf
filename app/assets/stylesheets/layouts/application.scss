@@ -1,6 +1,6 @@
 body{
   background-color:#F2D5E3;
-  background-image:url('/assets/images/5.jpg');
+  background-image:url('/assets/images/1.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
   display: block;
@@ -124,7 +124,7 @@ body{
 
 .table th ,.table td{
   border-top:none;
-  padding: 0.5em 1em;
+  // padding: 0.5em 1em;
   margin: 1em 0;
   background: #faf4fad0;
 }
@@ -159,4 +159,12 @@ body{
   text-align:center;
   margin-bottom:10px;  
   border:0px none;
+}
+.md-3-1{
+  text-align: center;
+  font-weight: 400;
+  color:orangered;
+  background-color:rgba(255, 255, 255, 0.721);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }

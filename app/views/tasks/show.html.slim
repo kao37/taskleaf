@@ -4,9 +4,9 @@ h1 タスクの詳細
   =link_to '一覧へ戻る', tasks_path, class: 'btn btn-outline-warning2'
 table.table.table-hover
   tbody
-    tr 
-      th= Task.human_attribute_name(:id)
-      td= @task.id
+    / tr 
+    /   th= Task.human_attribute_name(:id)
+    /   td= @task.id
     tr
       th= Task.human_attribute_name(:name)
       td= @task.name
@@ -18,10 +18,10 @@ table.table.table-hover
       td= image_tag @task.image if @task.image.attached?
     tr
       th= Task.human_attribute_name(:created_at)
-      td= @task.created_at
+      td= @task.created_at.to_s(:datetime_jp)
     tr
       th= Task.human_attribute_name(:updated_at)
-      td= @task.updated_at
+      td= @task.updated_at.to_s(:datetime_jp)
 
 =link_to '編集', edit_task_path, class: 'btn btn-primary2 mr-3'
 =link_to '削除', @task, method: :delete, data: { confilm: "タスク「#{@task.name}」を削除します。よろしいです?" }, class: 'btn btn-danger2'
