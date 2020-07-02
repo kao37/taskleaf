@@ -7,7 +7,7 @@ class Task < ApplicationRecord
 
   belongs_to :user
 
-  scope :recent, -> { order(created_at: :desc) }
+  # scope :recent, -> { order(created_at: :desc) }
 
   def self.csv_attributes
     ["name", "description", "created_at", "updated_at"]
