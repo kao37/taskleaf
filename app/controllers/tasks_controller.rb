@@ -7,7 +7,7 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.csv { send_data @tasks.generate_csv, filename: "tasks-#{Time.zone.now.strftime('%Y%m%d%S')}.csv" } 
+      format.csv { send_data @tasks.generate_csv, filename: "tasks-#{Time.zone.now.strftime('%Y%m%d%S')}.csv" } # --- ②
     end
   end
 
@@ -36,8 +36,11 @@ class TasksController < ApplicationController
 
     if @task.save
       TaskMailer.creation_email(@task).deliver_now
-      redirect_to  @task, notice: "タスク「#{@task.name}」を登録しました。"
-    else 
+      5.times do
+        SampleJob.set(wait: 5.seconds).perform_later
+      end
+      redirect_to @task, notice: "タスク「#{@task.name}」を登録しました。"
+    else
       render :new
     end
   end
@@ -54,11 +57,10 @@ class TasksController < ApplicationController
 
   def import
     current_user.tasks.import(params[:file])
-    redirect_to tasks_url, notice: "タスクを追加しました。"
+    redirect_to tasks_url, notice: "タスクを追加しました"
   end
 
-
-  private 
+  private
 
   def task_params
     params.require(:task).permit(:name, :description, :image)
