@@ -40,12 +40,25 @@ body{
   margin-bottom:5px;
   margin-left:10px;
 }
+.btn-outline-warning2:hover{
+  border:solid 1px;
+  border-color:rgb(250, 246, 110);
+  background-color:white;
+  color:#e83e8c;
+}
+
 
 .btn-outline-warning3{
   color:gray;
   background-color:rgb(109, 247, 245);
   margin-bottom: 5px;
   margin-left: 10px;
+}
+.btn-outline-warning3:hover{
+  border:solid 1px;
+  border-color:rgb(109, 247, 245);
+  background-color:white;
+  color:#e83e8c;
 }
 
 .btn-outline-primary3{
@@ -54,13 +67,49 @@ body{
   margin-bottom: 5px;
   margin-left: 10px;
 }
+.btn-outline-primary3:hover{
+  color:#e83e8c;
+  border:solid 1px;
+  border-color: rgb(240, 99, 99);
+  background-color:white;
+}
 
 .btn-outline-primary4{
-  color:gray;
-  background-color:white;
+  color:white;
+  background-color:e83e8c;
   margin-bottom: 5px;
   margin-left: 10px;
 }
+.btn-outline-primary4:hover{
+  color:#e83e8c;
+  border:solid 1px;
+  border-color:#e83e8c;
+  background-color:white;
+}
+
+.btn-danger4{
+  color:rgb(240, 99, 99);
+  border:solid 2px;
+  border-color: rgb(240, 99, 99);
+  margin-bottom: 10px;
+}
+.btn-danger4:hover{
+  color:white;
+  background-color: rgb(240, 99, 99);
+}
+
+.btn-danger3{
+  color: white;
+  background-color:#e83e8c;
+  margin-bottom: 10px;
+}
+.btn-danger3:hover{
+  color:#e83e8c;
+  border-color:#e83e8c;
+  background-color: white;
+}
+
+
 .table th ,.table td{
   border-top:none;
   padding: 0.5em 1em;
@@ -68,22 +117,15 @@ body{
   background: #faf4fad0;
 }
 
-.btn-danger3{
-  color: #e83e8c;
-  background-color: pink;
-  margin-bottom: 10px;
-}
-.btn-danger3:hover{
-  color:white;
-}
-
 .table thead th{
   border-bottom: solid 6px rgb(156, 247, 233);
 }
+
 .form-group {
   background-color:skyblue;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  padding:2px;
   color:white;
   text-align:center;  
   border:0px none;
@@ -92,4 +134,17 @@ body{
   background:white;
   border-radius:5px;
   margin-bottom:10px;
+}
+.form-group2 {
+  text-align:center;  
+  border:0px none;
+}
+.form-group3 {
+  background-color:rgba(135, 207, 235, 0.851);
+  padding:3px;
+  border-radius: 10px;
+  color:white;
+  text-align:center;
+  margin-bottom:10px;  
+  border:0px none;
 }
