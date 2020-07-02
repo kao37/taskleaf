@@ -1,11 +1,17 @@
+body{
+  background-color:#F2D5E3;
+  background-image:url('/assets/images/5.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .app-title.navbar.navbar-expand-md.navbar-light.bg-light{
   background-color: #FBDA61;
   background-image: linear-gradient(45deg,#e44296  0%,#FBDA61  100%);
-  // background: linear-gradient(to right,#ef629f,#eecda3);
   border-bottom-left-radius:50px;
   border-bottom-right-radius:50px;
 }
+
 .navbar-brand1{
   color:white;
   font-size:1.50rem;
@@ -16,9 +22,9 @@
 
 .alert.alert-success{
   margin-top:10px;
-  background-color:pink;
+  background-color:white;
   border-radius: 25px;
-  color:gray;
+  color:rgb(105, 212, 250);
   border:0px none;
 }
 
@@ -36,7 +42,7 @@
 
 .btn-outline-warning3{
   color:gray;
-  background-color:rgb(247, 131, 60);
+  background-color:rgb(109, 247, 245);
   margin-bottom: 5px;
   margin-left: 10px;
 }
@@ -58,8 +64,31 @@
   border-top:none;
   padding: 0.5em 1em;
   margin: 1em 0;
-  background: #faf4fa;
+  background: #faf4fad0;
 }
+
+.btn-danger3{
+  color: #e83e8c;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+.btn-danger3:hover{
+  color:white;
+}
+
 .table thead th{
   border-bottom: solid 6px rgb(156, 247, 233);
+}
+.form-group {
+  background-color:skyblue;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color:white;
+  text-align:center;  
+  border:0px none;
+}
+.form-check{
+  background:white;
+  border-radius:5px;
+  margin-bottom:10px;
 }

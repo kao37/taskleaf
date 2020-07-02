@@ -1,27 +1,32 @@
 .btn-outline-primary2 {
   color: #e83e8c;
+  // color:white;
   border:solid 2px;
-  border-color: pink;
+  border-color: #e83e8c;
   margin-bottom: 10px;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  // font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .btn-outline-primary2:hover{
   background:pink;
   color:white;
+
 }
 
 h1{
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin-top:10px;
-  color:#ef629f;
+  // color:#ef629f;
+  color:rgb(114, 95, 95);
   font-size:2.2rem;
 }  
+
 .btn-primary2{
   color: white;
   background-color: #7dc3f1;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
 .btn-danger2{
   color: white;
   background-color: #f17daf;
