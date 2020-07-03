@@ -18,4 +18,4 @@ table.table.table-hover
         td= user.admin? ? 'あり': 'なし'
         td
           = link_to '編集', edit_admin_user_path(user), class: 'btn btn-primary2 mr-3'
-          = link_to '削除', [:admin, user], method: :delete, data: { confilm: "ユーザー「#{user.name}」を削除します。よろしいですか?" }, class: 'btn btn-danger2'
+          = link_to '削除', [:admin, user], method: :delete, data: { confilm: "ユーザー「#{user.name}」を削除します。よろしいですか?" }, class: 'btn btn-danger2 mr-3'
