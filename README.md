@@ -5,7 +5,7 @@
 
 ![01](https://user-images.githubusercontent.com/64763739/87284919-df618100-c531-11ea-848c-4f0e017b04e8.png)
 
-### 制作期間（7時間、1週間）、制作時期（2020年7月）
+### 制作期間（1週間）、制作時期（2020年7月）
 
 ### 使用言語　　　
 <br>:RubyonRails、DB：PostgreSQL　ワイヤーフレーム:Bootstrap
